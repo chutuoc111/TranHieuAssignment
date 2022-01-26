@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="assignment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gVc-qH-I6L">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XNf-0U-Gve" customClass="TriangleView" customModule="assignment" customModuleProvider="target">
+                                        <rect key="frame" x="53" y="193" width="149" height="165"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Ri-E4-Byl" customClass="TriangleView" customModule="assignment" customModuleProvider="target">
+                                        <rect key="frame" x="212" y="264.5" width="149" height="165"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="veW-eE-gCN">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Osz-3w-wGG">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <subviews>
+                                                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fh5-rO-OGu">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Lxd-Cs-rNe">
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                    </view>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <blurEffect style="light"/>
+                                                </visualEffectView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="fh5-rO-OGu" firstAttribute="top" secondItem="Osz-3w-wGG" secondAttribute="top" id="GJc-92-0cf"/>
+                                                <constraint firstAttribute="bottom" secondItem="fh5-rO-OGu" secondAttribute="bottom" id="ZiB-JT-wkJ"/>
+                                                <constraint firstItem="fh5-rO-OGu" firstAttribute="leading" secondItem="Osz-3w-wGG" secondAttribute="leading" id="pHZ-r6-hDm"/>
+                                                <constraint firstAttribute="trailing" secondItem="fh5-rO-OGu" secondAttribute="trailing" id="tbm-OB-qpJ"/>
+                                            </constraints>
+                                        </view>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <blurEffect style="light"/>
+                                    </visualEffectView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swift_logo" translatesAutoresizingMaskIntoConstraints="NO" id="kdf-aE-xa4">
+                                        <rect key="frame" x="116" y="126.5" width="182" height="195"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="3Ri-E4-Byl" firstAttribute="width" secondItem="XNf-0U-Gve" secondAttribute="width" id="1X7-wI-dyF"/>
+                                    <constraint firstItem="3Ri-E4-Byl" firstAttribute="bottom" secondItem="XNf-0U-Gve" secondAttribute="bottom" multiplier="1.2" id="4JV-pd-5i1"/>
+                                    <constraint firstItem="XNf-0U-Gve" firstAttribute="width" secondItem="gVc-qH-I6L" secondAttribute="width" multiplier="270/750" id="4rV-T0-nBq"/>
+                                    <constraint firstItem="kdf-aE-xa4" firstAttribute="centerX" secondItem="gVc-qH-I6L" secondAttribute="centerX" id="8Dd-hG-WFS"/>
+                                    <constraint firstItem="kdf-aE-xa4" firstAttribute="height" secondItem="gVc-qH-I6L" secondAttribute="height" multiplier="290/1334" id="90C-8P-jJR"/>
+                                    <constraint firstItem="3Ri-E4-Byl" firstAttribute="leading" secondItem="gVc-qH-I6L" secondAttribute="centerX" constant="5" id="Dha-8r-Epd"/>
+                                    <constraint firstItem="XNf-0U-Gve" firstAttribute="height" secondItem="gVc-qH-I6L" secondAttribute="height" multiplier="246/1334" id="EW6-qg-xIb"/>
+                                    <constraint firstAttribute="centerX" secondItem="XNf-0U-Gve" secondAttribute="trailing" constant="5" id="H0G-81-Wlh"/>
+                                    <constraint firstItem="kdf-aE-xa4" firstAttribute="width" secondItem="gVc-qH-I6L" secondAttribute="width" multiplier="330/750" id="Ipw-18-KRe"/>
+                                    <constraint firstAttribute="bottom" secondItem="veW-eE-gCN" secondAttribute="bottom" id="JOT-vI-yDm"/>
+                                    <constraint firstItem="veW-eE-gCN" firstAttribute="top" secondItem="gVc-qH-I6L" secondAttribute="top" id="PSQ-at-SMB"/>
+                                    <constraint firstItem="XNf-0U-Gve" firstAttribute="top" secondItem="kdf-aE-xa4" secondAttribute="bottom" multiplier="0.6" id="bjC-he-A7p"/>
+                                    <constraint firstAttribute="trailing" secondItem="veW-eE-gCN" secondAttribute="trailing" id="jWh-px-JbN"/>
+                                    <constraint firstItem="kdf-aE-xa4" firstAttribute="centerY" secondItem="gVc-qH-I6L" secondAttribute="centerY" multiplier="1/2" id="mKl-kt-ec5"/>
+                                    <constraint firstItem="veW-eE-gCN" firstAttribute="leading" secondItem="gVc-qH-I6L" secondAttribute="leading" id="phX-V9-2qR"/>
+                                    <constraint firstItem="3Ri-E4-Byl" firstAttribute="height" secondItem="XNf-0U-Gve" secondAttribute="height" id="siy-e7-kHH"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gVc-qH-I6L" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="D4j-xs-j6A"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gVc-qH-I6L" secondAttribute="trailing" id="doY-1c-z5y"/>
+                            <constraint firstItem="gVc-qH-I6L" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="mAQ-YH-7VU"/>
+                            <constraint firstAttribute="bottom" secondItem="gVc-qH-I6L" secondAttribute="bottom" id="suz-Jl-I4Z"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="blueTriangleView" destination="3Ri-E4-Byl" id="SBE-rt-wmd"/>
+                        <outlet property="redTriangleView" destination="XNf-0U-Gve" id="EEb-Ep-wW9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="44.927536231884062" y="71.651785714285708"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="swift_logo" width="2000" height="1800"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
